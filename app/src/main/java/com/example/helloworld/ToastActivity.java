@@ -11,11 +11,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.helloworld.util.ToastUtil;
+
 /**
  * @author Administrator
  */
 public class ToastActivity extends AppCompatActivity {
-    private Button mBtnToast1, mBtnToast2, mBtnToast3;
+    private Button mBtnToast1, mBtnToast2, mBtnToast3, mBtnToast4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +26,12 @@ public class ToastActivity extends AppCompatActivity {
         mBtnToast1 = findViewById(R.id.btn_toast1);
         mBtnToast2 = findViewById(R.id.btn_toast2);
         mBtnToast3 = findViewById(R.id.btn_toast3);
+        mBtnToast4 = findViewById(R.id.btn_toast4);
         OnClick onClick = new OnClick();
         mBtnToast1.setOnClickListener(onClick);
         mBtnToast2.setOnClickListener(onClick);
         mBtnToast3.setOnClickListener(onClick);
+        mBtnToast4.setOnClickListener(onClick);
     }
 
     class OnClick implements View.OnClickListener {
@@ -54,6 +58,9 @@ public class ToastActivity extends AppCompatActivity {
                     textView.setText("自定义");
                     toastCustom.setView(view);
                     toastCustom.show();
+                    break;
+                case R.id.btn_toast4:
+                    ToastUtil.showMsg(getApplicationContext(), "包装过的Toast");
                     break;
                 default:
                     break;
