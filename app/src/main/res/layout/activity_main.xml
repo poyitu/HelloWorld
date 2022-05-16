@@ -13,6 +13,47 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="button" />
+
+        <Button
+            android:id="@+id/btn_eidtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EidtText"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ImageView"
+            android:textAllCaps="false" />
+
         <Button
             android:id="@+id/btn_listview"
             android:layout_width="match_parent"
