@@ -51,7 +51,7 @@ public class MyListAdapter extends BaseAdapter {
             holder = new ViewHolder();
             holder.imageView = convertView.findViewById(R.id.iv_1);
             holder.tvTitle = convertView.findViewById(R.id.tv_title);
-            holder.tvTime = convertView.findViewById(androidx.core.R.id.time);
+            holder.tvTime = convertView.findViewById(R.id.tv_time);
             holder.tvContent = convertView.findViewById(R.id.tv_content);
             convertView.setTag(holder);
 
