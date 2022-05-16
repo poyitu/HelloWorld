@@ -31,7 +31,7 @@ public class ListViewActivity extends Activity {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(ListViewActivity.this, "长按 pos", Toast.LENGTH_SHORT).show();
-                return false;
+                return true;
             }
         });
     }

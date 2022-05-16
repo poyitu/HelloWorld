@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/HelloWorld2/app/src/main/res/drawable/list_item.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/HelloWorld2/app/src/main/res/layout/activity_gridview.xml" value="0.17603850050658562" />
         <entry key="..\:/AndroidStudioProjects/HelloWorld2/app/src/main/res/layout/activity_listview.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/HelloWorld2/app/src/main/res/layout/activity_main.xml" value="0.17603850050658562" />
+        <entry key="..\:/AndroidStudioProjects/HelloWorld2/app/src/main/res/layout/layout_grid_item.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/HelloWorld2/app/src/main/res/layout/layout_list_item.xml" value="0.22" />
       </map>
     </option>
