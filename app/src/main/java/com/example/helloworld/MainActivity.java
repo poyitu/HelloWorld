@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_listview;
     private Button btn_gridview;
     private Button btn_webview;
+    private Button btn_toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btn_listview = findViewById(R.id.btn_listview);
         btn_gridview = findViewById(R.id.btn_gridview);
         btn_webview = findViewById(R.id.btn_webview);
+        btn_toast = findViewById(R.id.btn_toast);
         setListener();
     }
 
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btn_listview.setOnClickListener(onClick);
         btn_gridview.setOnClickListener(onClick);
         btn_webview.setOnClickListener(onClick);
+        btn_toast.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -46,8 +49,12 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
                     break;
                 case R.id.btn_webview:
-                    //跳转到 gridview 页面
+                    //跳转到 webview 页面
                     intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    break;
+                case R.id.btn_toast:
+                    //跳转到 toast 页面
+                    intent = new Intent(MainActivity.this, ToastActivity.class);
                     break;
                 default:
                     break;
