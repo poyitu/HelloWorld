@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         <activity
+            android:name=".fragment.ContainerActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Design.Light.NoActionBar">
@@ -50,9 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".UIActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
         <activity android:name=".LifeCycleActivity" />
@@ -65,6 +66,7 @@
             android:label="B">
             <intent-filter>
                 <action android:name="com.iweb.test" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
