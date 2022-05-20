@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.helloworld.fragment.ContainerActivity;
 import com.example.helloworld.gridview.GridViewActivity;
 import com.example.helloworld.jump.AActivity;
 import com.example.helloworld.listview.ListViewActivity;
@@ -25,6 +26,7 @@ public class UIActivity extends AppCompatActivity {
     private Button btn_dialog;
     private Button btn_lifecycyle;
     private Button btn_jump;
+    private Button btn_fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,7 @@ public class UIActivity extends AppCompatActivity {
         btn_dialog = findViewById(R.id.btn_dialog);
         btn_lifecycyle = findViewById(R.id.btn_lifecycyle);
         btn_jump = findViewById(R.id.btn_jump);
+        btn_fragment = findViewById(R.id.btn_fragment);
         setListener();
     }
 
@@ -63,6 +66,7 @@ public class UIActivity extends AppCompatActivity {
         btn_dialog.setOnClickListener(onClick);
         btn_lifecycyle.setOnClickListener(onClick);
         btn_jump.setOnClickListener(onClick);
+        btn_fragment.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -125,6 +129,10 @@ public class UIActivity extends AppCompatActivity {
                 case R.id.btn_jump:
                     //跳转到 jump 页面
                     intent = new Intent(UIActivity.this, AActivity.class);
+                    break;
+                case R.id.btn_fragment:
+                    //跳转到 frament 演示页面
+                    intent = new Intent(UIActivity.this, ContainerActivity.class);
                     break;
                 default:
                     break;

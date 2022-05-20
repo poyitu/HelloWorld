@@ -5,6 +5,26 @@
     android:gravity="center"
     android:orientation="vertical">
 
+
+    <Button
+        android:id="@+id/btn_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="给activity发消息" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="更换FragmentB" />
+
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="更换text内容" />
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"

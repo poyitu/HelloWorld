@@ -53,7 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".UIActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
         <activity android:name=".LifeCycleActivity" />
